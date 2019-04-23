@@ -6,8 +6,8 @@ export default function Navbar() {
         <nav className="main-navigation">
             <ul>
                 <li>
-                    <Link to="/">
-                        Welcome
+                    <Link to="/home">
+                        Home
                     </Link>
                 </li>
                 <li>

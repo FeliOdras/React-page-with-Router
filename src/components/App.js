@@ -14,7 +14,8 @@ function App() {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Navbar />
-          <Route path="/" component={Home} exact />
+          <Route path="/" exact render={() => <h2>Welcome Stanger</h2>} />
+          <Route path="/home" component={Home} exact />
           <Route path="/about" component={About} />
           <Route path="/info" component={Info} />
           <Route path="/credits" component={Credits} />
