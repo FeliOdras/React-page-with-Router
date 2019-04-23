@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../images/logo.svg';
 import Navbar from './Navbar'
+import { BrowserRouter } from 'react-router-dom'
 
 function App() {
   return (
