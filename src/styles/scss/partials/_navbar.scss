@@ -1,11 +1,18 @@
 .main-navigation {
-    ul {
+    font-size: 1rem;
+        ul {
         margin:10px 0;
 
         li {
             display: inline;
             list-style-type:none;
             padding: 10px;
+
+            a {
+                color:#fff;
+                text-decoration: none;
+                font-weight:bold;
+            }
         }
     }
 }
