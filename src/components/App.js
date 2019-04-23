@@ -3,6 +3,8 @@ import logo from '../images/logo.svg';
 import Navbar from './Navbar'
 import { BrowserRouter, Route } from 'react-router-dom'
 import About from './About'
+import Info from './Info'
+import Credits from './Credits'
 
 function App() {
   return (
