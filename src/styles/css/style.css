@@ -25,6 +25,13 @@
   to {
     transform: rotate(360deg); } }
 
+.main-navigation ul {
+  margin: 10px 0; }
+  .main-navigation ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 10px; }
+
 body {
   margin: 0;
   padding: 0;
