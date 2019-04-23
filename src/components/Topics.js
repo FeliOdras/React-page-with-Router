@@ -1,8 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Topics = () => {
+function Topics({ match }) {
     return (
-        <h2>Topics</h2>
+        <React.Fragment>
+            <h2>Topics</h2>
+            <p>Here you can select your topic</p>
+            <nav className="subnav">
+                <ul>
+                    <li>
+                        <Link to={`${match.url}/components`}>
+                            Components
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={`${match.url}/props`}>
+                            Props
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to={`${match.url}/states`}>
+                            States
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </React.Fragment >
     )
 }
 
