@@ -16,14 +16,14 @@ function App() {
         <div className="App">
           <header className="App-header">
             <Logo />
-            <Navbar />
-            <Route path="/home" component={Home} exact />
-            <Route path="/about" component={About} />
-            <Route path="/info" component={Info} />
-            <Route path="/credits" component={Credits} />
-            <Route path="/topics" component={Topics} />
-            <Route path="/" exact render={() => <h2>Welcome Stanger</h2>} />
           </header>
+          <Navbar />
+          <Route path="/home" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route path="/info" component={Info} />
+          <Route path="/credits" component={Credits} />
+          <Route path="/topics" component={Topics} />
+          <Route path="/" exact render={() => <h2>Welcome Stanger</h2>} />
         </div>
       </BrowserRouter>
       <Footer />
