@@ -51,6 +51,7 @@
 
 .subnav {
   background-color: #e8ecf7;
+  border: 1px solid #e8ecf7;
   display: inline-block;
   color: #64DAFB;
   border-radius: 5px; }
@@ -62,6 +63,14 @@
       display: inline-block;
       list-style-type: none;
       padding: 5px 10px; }
+      .subnav ul li:hover {
+        background-color: #f9fdf8; }
+      .subnav ul li:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      .subnav ul li:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
       .subnav ul li a {
         color: #64DAFB;
         text-decoration: none; }
