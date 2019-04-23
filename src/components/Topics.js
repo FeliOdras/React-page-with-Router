@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import Topic from './Topic';
 
 function Topics({ match }) {
     return (
@@ -28,8 +29,9 @@ function Topics({ match }) {
             {/*<Route path="/topics/components" render={() => <h3>You clicked components</h3>} />
             <Route path="/topics/props" render={() => <h3>You clicked props</h3>} />
             <Route path="/topics/states" render={() => <h3>You clicked states</h3>} />*/}
-        </React.Fragment >
+            <Route path={`${match.path}/:topic`} component={Topic} />
+            <Route path={match.path} exact render={() => <h4>No topic selected</h4>} />
+        </React.Fragment>
     )
 }
-
 export default Topics
