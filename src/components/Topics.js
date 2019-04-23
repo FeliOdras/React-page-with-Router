@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
-import Topic from './Topic';
 
 function Topics({ match }) {
     return (
@@ -33,5 +32,9 @@ function Topics({ match }) {
             <Route path={match.path} exact render={() => <h4>No topic selected</h4>} />
         </React.Fragment>
     )
+}
+
+function Topic({ match }) {
+    return <h3>You clicked: {match.params.topic}</h3>
 }
 export default Topics
