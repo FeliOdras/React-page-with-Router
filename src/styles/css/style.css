@@ -49,6 +49,21 @@
         text-decoration: none;
         font-weight: bold; }
 
+.subnav {
+  background-color: #e8ecf7;
+  display: inline-block;
+  color: #64DAFB; }
+  .subnav ul {
+    padding: 0;
+    font-size: .9rem; }
+    .subnav ul li {
+      display: inline;
+      list-style-type: none;
+      padding: 8px; }
+      .subnav ul li a {
+        color: #64DAFB;
+        text-decoration: none; }
+
 footer {
   background-color: #5e6270;
   padding: 15px;

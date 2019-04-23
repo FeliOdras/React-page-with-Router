@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 function Topics({ match }) {
     return (
@@ -25,6 +25,9 @@ function Topics({ match }) {
                     </li>
                 </ul>
             </nav>
+            {/*<Route path="/topics/components" render={() => <h3>You clicked components</h3>} />
+            <Route path="/topics/props" render={() => <h3>You clicked props</h3>} />
+            <Route path="/topics/states" render={() => <h3>You clicked states</h3>} />*/}
         </React.Fragment >
     )
 }
