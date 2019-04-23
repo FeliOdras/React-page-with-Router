@@ -2,14 +2,16 @@
     background-color:#e8ecf7;
     display:inline-block;
     color:#64DAFB;
+    border-radius: 5px;
     ul {
         padding:0;
+        margin:0;
         font-size: .9rem;
 
         li {
-            display: inline;
+            display: inline-block;
             list-style-type: none;
-            padding:8px;
+            padding:5px 10px;
             a {
                 color:#64DAFB;
                 text-decoration:none;

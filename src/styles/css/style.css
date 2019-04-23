@@ -52,14 +52,16 @@
 .subnav {
   background-color: #e8ecf7;
   display: inline-block;
-  color: #64DAFB; }
+  color: #64DAFB;
+  border-radius: 5px; }
   .subnav ul {
     padding: 0;
+    margin: 0;
     font-size: .9rem; }
     .subnav ul li {
-      display: inline;
+      display: inline-block;
       list-style-type: none;
-      padding: 8px; }
+      padding: 5px 10px; }
       .subnav ul li a {
         color: #64DAFB;
         text-decoration: none; }
