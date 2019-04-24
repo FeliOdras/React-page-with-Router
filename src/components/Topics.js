@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
 
 function Topics({ match }) {
     return (
@@ -9,19 +9,19 @@ function Topics({ match }) {
             <nav className="subnav">
                 <ul>
                     <li>
-                        <Link to={`${match.url}/components`}>
+                        <NavLink to={`${match.url}/components`}>
                             Components
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to={`${match.url}/props`}>
+                        <NavLink to={`${match.url}/props`}>
                             Props
-                        </Link>
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to={`${match.url}/states`}>
+                        <NavLink to={`${match.url}/states`}>
                             States
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
