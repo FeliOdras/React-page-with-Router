@@ -59,18 +59,23 @@
     .subnav ul li {
       display: inline-block;
       list-style-type: none;
-      padding: 5px 10px; }
-      .subnav ul li:hover {
-        background-color: #f9fdf8; }
-      .subnav ul li:first-child {
+      padding: 0; }
+      .subnav ul li:first-child a {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; }
-      .subnav ul li:last-child {
+      .subnav ul li:last-child a {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px; }
       .subnav ul li a {
         color: #64DAFB;
-        text-decoration: none; }
+        text-decoration: none;
+        padding: 5px 10px;
+        display: inline-block; }
+        .subnav ul li a:hover {
+          background-color: #f9fdf8; }
+        .subnav ul li a.active {
+          background-color: #676b78;
+          color: #fff; }
 
 footer {
   background-color: #5e6270;
