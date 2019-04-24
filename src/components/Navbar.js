@@ -1,34 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
     return (
         <nav className="main-navigation">
             <ul>
                 <li>
-                    <Link to="/home">
+                    <NavLink to="/home">
                         Home
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/about">
+                    <NavLink to="/about">
                         About
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/info">
+                    <NavLink to="/info">
                         Info
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/credits">
+                    <NavLink to="/credits">
                         Credits
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/topics">
+                    <NavLink to="/topics">
                         Topics
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </nav>

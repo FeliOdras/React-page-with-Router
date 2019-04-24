@@ -35,19 +35,16 @@
     .main-navigation ul li {
       display: inline;
       list-style-type: none;
-      padding: 10px; }
-      .main-navigation ul li:first-child {
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px; }
-      .main-navigation ul li:last-child {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px; }
-      .main-navigation ul li:hover {
-        background-color: #35373d; }
+      padding: 0px; }
       .main-navigation ul li a {
         color: #fff;
         text-decoration: none;
-        font-weight: bold; }
+        font-weight: bold;
+        padding: 10px; }
+        .main-navigation ul li a:hover {
+          background-color: #35373d; }
+        .main-navigation ul li a.active {
+          background-color: #24262e; }
 
 .subnav {
   background-color: #e8ecf7;

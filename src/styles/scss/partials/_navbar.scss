@@ -9,26 +9,22 @@
         li {
             display: inline;
             list-style-type:none;
-            padding: 10px;
-
-            &:first-child {
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-            }
-
-            &:last-child {
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
-
-            &:hover {
-                background-color:#35373d;
-            }
+            padding: 0px;
 
             a {
                 color:#fff;
                 text-decoration: none;
                 font-weight:bold;
+                padding:10px;
+
+                &:hover {
+                    background-color:#35373d;
+                }
+
+                &.active {
+                    background-color:#24262e;
+                }
+
             }
         }
     }
