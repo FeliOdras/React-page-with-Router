@@ -10,6 +10,37 @@ import Topics from './Topics';
 import NotFound from './NotFound';
 import Footer from './Footer';
 
+const routes = [
+  {
+    path: "/",
+    excat: true,
+    component: () => <h2>Welcome Stanger</h2>
+  },
+  {
+    path: "/home",
+    component: Home
+  },
+  {
+    path: "/about",
+    component: About
+  },
+  {
+    path: "/info",
+    component: Info
+  },
+  {
+    path: "/credits",
+    component: Credits
+  },
+  {
+    path: "/topics",
+    component: Topics
+  },
+  {
+    component: NotFound
+  }
+]
+
 function App() {
   return (
     <React.Fragment>
@@ -20,13 +51,15 @@ function App() {
           </header>
           <Navbar />
           <Switch>
-            <Route path="/home" component={Home} exact />
-            <Route path="/about" component={About} />
-            <Route path="/info" component={Info} />
-            <Route path="/credits" component={Credits} />
-            <Route path="/topics" component={Topics} />
-            <Route path="/" exact render={() => <h2>Welcome Stanger</h2>} />
-            <Route component={NotFound} />
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.excat}
+                component={route.component}
+              />
+            )
+            )}
           </Switch>
         </div>
       </BrowserRouter>
